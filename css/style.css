@@ -1,0 +1,243 @@
+#titulo {
+    color: darkred;
+}
+
+p.texto.especial {
+    color: green;
+}
+
+p.texto {
+    color: darkblue;
+}
+
+p.especial {
+    color: orange;
+}
+
+.wrapper p.especial {
+    color: darkcyan;
+}
+
+div h2, div h3 {
+    color: red;
+}
+
+/* * {
+    font-size: 24px;
+    color:blueviolet;
+} */
+/* selector universal * modificaria todo!! siempre
+y cuando no se use las propiedades anteriormente en este 
+caso la propiedad color ya se uso, entonces al aplicarlo
+ modificó porque no se modifico el color, 
+ solo se cambio el tamaño de la fuente ya hemos usado 
+ esa propiedad anteriormente con */
+
+ div h2.color {
+    /* border: 5px #00ff00 dotted; */
+    /* width: 200px;por ser un elemento del bloque puedo
+    disminuir su tamano */
+    border-color: blueviolet;
+    border-style: solid;
+    border-radius: 30px; 
+    border-width: 45rep;
+ }
+/* 1px hace referencia a la densidad de pixeles,
+ unidad minima dentro de la web para mostrar algo */
+
+ /* colores los podemos buscar  por valores exagecimales 
+ siempre iniciamos con #, la ausencia color es 0 y la 
+ maxima intensidad del color es f, los dos primeros valores 
+ indican el color rojo 00,segundo verdeff, tercero azul00 */
+
+ .color {
+    color: rgb(0, 0, 0)
+ }
+
+ /* para utilizar la propiedad color, con rgb (0,0,0) el valor mayor 
+ es 255 y es la mayor intensidad, y el 0 es el menor, tb rgba (0,0,0,0) el ultimo valor es para la
+ opacidad 1(solido) 0 (transparente)
+ */
+
+/*  unidades utilizadas en css distintos anchos tamaños etc 1cm=centimetro, 
+1px=pixeles, 1pt=punto, 1mm=milimetros, 1in= pulgadas, 
+1pc=12 puntos, medidas absolutas no son recomendables para contrenido de 
+preferencia usar medidas relaticas como 2em= dos veces el tamaño de la 
+fuete que tiene el elemento en particular 2rem= relativo del tamano de la 
+fuente del elemento raiz, 1=rep=16px*/
+
+/* vh vw */
+
+#fondo {
+   /*  background-color: rgba(255,0,30);
+    opacity: 0.3;
+    height: 400px;
+    background-image: url('/img/foto.jpeg');
+    background-size: 100px 100px;
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: auto; */
+    background: #f00 url('/img/foto.jpeg') repeat center;
+    background-size: auto;
+}
+
+.margen {
+    background-color: chocolate;
+    margin: 15px;
+    padding: 30px 25px 5px;
+    border: solid 1px red;
+    height: 200px;
+    width: 50px;
+    overflow: scroll;
+    outline: 1px solid blue;
+}
+
+.texto {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px  pink;
+}
+
+.paragraph:first-child {
+    color: green;
+}
+
+.paragraph:nth-child(3) {
+    color: orange;
+}
+
+.paragraph:last-child {
+    color: blue;
+}
+
+.paragraph::before {
+    content: " ";
+    display: inline-block;
+    border-top: 5px solid transparent;
+	border-left: 10px solid red;
+	border-bottom: 5px solid transparent;
+    margin-right: 5px;
+}
+
+.paragraph::after {
+    content: " ";
+    display: inline-block;
+    border-top: 5px solid transparent;
+	border-right: 10px solid red;
+	border-bottom: 5px solid transparent;
+    margin-left: 5px;
+}
+
+.paragraph:hover {
+    opacity: 0.3;
+}
+
+.social-link:link {
+    color: darkcyan;
+}
+
+.social-link:visited {
+    color: darkgreen;
+}
+
+.social-link:hover {
+    color: red;
+}
+
+.social-link:active {
+    color: greenyellow;
+}
+
+.la-lista {
+    background-color: cyan;
+    list-style-position: inside;
+    list-style-type: circle;
+}
+
+.mi-tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid grey;
+}
+
+.cabecera, th {
+    background-color: plum;
+    color: white;
+    text-align: left;
+}
+
+.mi-tabla tr:nth-child(even) {
+    background-color: antiquewhite;
+}
+
+.mi-tabla tr:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.span {
+    display: block;
+    max-width: 300px;
+    background-color: #f00;
+}
+
+.inline {
+    display: inline;
+}
+
+/* #position {
+    position:absolute;
+    left: 20px;
+    top: 25px } */
+
+
+.left {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    height: 200px;
+}
+
+.right {
+    float: right;
+}
+
+.card {
+    border: solid 0 #ddd;
+    border-radius: 5px;
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+.inline-block {
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+    background-color: aqua;
+}
+
+/* 
+Centrado Horrible
+.center {
+    padding: 50px 0;
+    width: 100%;
+    margin: 0 auto;
+    background-color: bisque;
+    text-align: center;
+} */
+   
+.center {
+    background-color: #f00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}

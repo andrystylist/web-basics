@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- DOCTYPE html indica al navegador que el código 
+    que contiene éste archivo es HTML5 -->
+<html lang="en">
+    <head>
+        <title>Mi primera web</title>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <style>
+            table, th, td {border: 1px solid blue;}
+        </style>
+    </head>
+    <body>
+        <table style="width: 500px;">
+            <thead>
+            <tbody>
+                <tr>
+                    <th>Precio</th>
+                    <th>Producto</th>
+                </tr>
+            </thead>
+            
+            <tr>
+                <td>Mac</td>
+                <td>100$</td>
+            </tr>
+            <tr>
+                <td>Morphe</td>
+                <td>200$</td>
+            </tr>
+            <tr>
+                <td>Norvina</td>
+                <td>300$</td>
+            </tr>
+            <tr>
+                <td>Morphe la mejor marca</td>
+                <td>400$</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <td></td>
+                <td>Total 1000$ </td>
+
+            </tfoot>
+        <!--thead, es la cabecera para que sevea claro,
+            tbody es el cuerpo agrupa las filas que 
+            pertenecen al cuerpo, tfoot pie de la tabla, 
+            tr:fila th:cabecera td:columnas-->
+              
+
+        </table>
+        <!--ul unordered list es lista no ordenada 
+        aparece con puntos cada 
+        item por defecto-->
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+        <!--ol ordered list es lista ordenada aparece enumerada cada 
+        item por defecto. 
+        si deseo cambiar el valor inicial por defecto dentro de 
+        la primera etiqueta li, agrego el atributo values
+        y el iniciara la lista desde ese numero en adelante...-->
+        <ol>
+            <li value="40">Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>
+                Elemento 5
+                <ol>
+                    <li style="list-style: lower-latin;">Sub lista</li>
+                    <li style="list-style-type: lower-latin;">Sub lista</li>
+                </ol>
+            </li>
+        </ol>
+
+        <form action="/formulario" method="GET">
+            <fieldset>
+                <div>
+                    <label for="usuario">
+                        Usuario
+                    </label>
+                    <input
+                        value="andrystylist"
+                        id="usuario"
+                        name="usuario"
+                        type="text"
+                        placeholder="Usuario"
+                        autocomplete="off"
+                    />
+                </div>
+                <div>
+                    <label for="clave">
+                        Clave
+                    </label>
+                    <input
+                        id="clave"
+                        name="clave"
+                        type="password"
+                        placeholder="Password"
+                        autocomplete="off"
+                    />
+                </div>
+
+                <div>
+                    <legend>Genero</legend>
+                    <label for="masculino">
+                        <input
+                            id="masculino"
+                            name="genero"
+                            type="radio"
+                            value="M"
+                        />
+                        Masculino
+                    </label>
+                    <label for="femenino">
+                        <input
+                            id="femenino"
+                            name="genero"
+                            type="radio"
+                            value="F"
+                        />
+                        Femenino
+                    </label>
+                </div>
+
+                <fieldset>
+                    <legend>Choose your interests</legend>
+                    <div>
+                        <input type="checkbox" id="coding" name="interest" value="coding" checked />
+                        <label for="coding">Coding</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="music" name="interest" value="music" indeterminate />
+                        <label for="music">Music</label>
+                    </div>
+                </fieldset>
+            </fieldset>
+            <div>
+
+                <label for="comentario"> Comentario</label>
+                <br />
+                <textarea
+                    name="comentario"
+                    id="comentario" 
+                    cols="40"
+                    rows="10"
+                    id="comentario"
+                    placeholder="Ingrese comentario">hola ingresa tu comentario</textarea>
+            </div>
+            <div>
+                <button type="reset">Reset</button>
+                <button type="submit">Log in</button>
+                <button type="button"><img src="img/logo.png" height="50" />botón</button>
+            </div>
+        </form>
+        <hr />
+        <h1>Mi primer heading</h1>
+        <h2>Mi segundo heading</h2>
+        <h3>Mi tercer heading</h3>
+        <h4>Mi cuarto heading</h4>
+        <h5>Mi quinto heading</h5>
+        <h6>Mi sexto heading</h6>
+        <p>Soy muy feliz</p>
+        <p>jose gabriel hermoso</p>
+        <hr />
+        <h2>andry carolina</h2>
+        <p>
+            algo mas de texto, podemos tener un <i>texto</i> largo <br />con 
+            dentro de la etiqueta de texto y quiero resaltar una parte
+            de el <span class="red-text">nos sirve para referenciar</span>
+            texto dentro de otra <b>etiqueta</b>
+        </p>
+        <!--ees comentario
+        puede ser multilinea, una etiqueta br, es para salto de 
+        linea en un parrafo, no se comporta como esperamos 
+        si se usa dentro de la etiqueta span -->
+        <a target="_blank" href="https://www.instagram.com/andrystylist">Ir a instagram</a>
+        <img src="img/logo.png" height="200" alt="Andry logo" title="Andry logo" />
+        <hr />
+        
+    </body>
+</html>
